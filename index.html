@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="myimage">
+    <img src="http://lorempixel.com/600/600/">
+  </div>
+  <div class="myimage">
+    <img src="http://lorempixel.com/400/600/">
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+  <style>
+    .myimage{
+      overflow: hidden;
+    }
+    .myimage img{
+      transition: all .3s;
+    }
+    .myimage:not(:hover) img{
+      transform: scale(1) !important;
+    }
+  </style>
+</body>
+</html>
